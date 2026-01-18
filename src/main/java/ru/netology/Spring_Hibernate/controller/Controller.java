@@ -10,7 +10,7 @@ import java.util.Optional;
 @RequestMapping("/persons")
 @RestController
 public class Controller {
-    private Service service;
+    private final Service service;
 
     public Controller(Service service) {
         this.service = service;
