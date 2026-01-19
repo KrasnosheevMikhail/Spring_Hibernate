@@ -10,19 +10,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-@Table(name="persons")
+@Table(name = "persons")
 @IdClass(PersonId.class)
 @Entity
 public class Person {
     @Embedded
     @Id
     private PersonId personId;
-
-    @Column(nullable = false, unique = true)
-    private int phone_number;
-
-    @Column(nullable = false)
-    private String city_of_living;
+    @Column(name = "phone_number", nullable = false)
+    private int phoneNumber;
+    @Column(name = "city_of_living", nullable = false)
+    private String cityOfLiving;
 
 
 }
