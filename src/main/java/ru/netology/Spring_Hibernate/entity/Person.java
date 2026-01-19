@@ -16,15 +16,13 @@ import lombok.Setter;
 @Entity
 public class Person {
     @Id
-
     private String name;
     @Id
-
     private String surname;
     @Id
     private int age;
 
-    private int phone_number;
+    private int phoneNumber;
 
     private String cityOfLiving;
 
