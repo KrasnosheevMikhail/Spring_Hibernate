@@ -22,8 +22,9 @@ public class Person {
     @Id
     private int age;
 
+    @Column(name = "phone_number", nullable = false)
     private int phoneNumber;
-
+    @Column(name = "city_of_living", nullable = false)
     private String cityOfLiving;
 
 
